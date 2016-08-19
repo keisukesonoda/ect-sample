@@ -41,3 +41,39 @@ gulp
 ```
 
 で起動します。
+
+## ファイル構成
+~~~~
+ect-sample
+  ├── README.md
+  ├── gulpfile.coffee
+  ├── package.json
+  ├── app
+  │   └── source
+  │       ├── data
+  │       │   ├── pages.yaml
+  │       │   └── init.yaml
+  │       └── templates
+  │           ├── content
+  │           │   ├── about
+  │           │   │   └── index.ect
+  │           │   ├── product
+  │           │   │   ├── index.ect
+  │           │   │   └── detail
+  │           │   │       └── index.ect
+  │           │   └── index.ect
+  │           ├── layout
+  │           │   └── layout-base.ect
+  │           └── partials
+  │               ├── footer.ect
+  │               └── header.ect
+  └── gulp
+      ├── config.coffee
+      └── tasks
+          ├── ect-base.coffee
+          ├── ect-product-detail.coffee
+          ├── functions.coffee
+          ├── server.cofee
+          └── watch.coffee
+~~~~
+
