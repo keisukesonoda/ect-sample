@@ -4,6 +4,8 @@
 ## 環境構築
 本パッケージを動かすために必要（便利）なツールをインストールします。
 
+
+### node.js
 <a href="https://nodejs.org/en/" target="_blank">node.js</a>にて「INSTALL」ボタンをクリックし、手順に沿ってインストールしてください。
 
 ```
@@ -12,11 +14,13 @@ node -v
 nodeのバージョンが表示されればインストールは完了しています。
 
 ### gulp本体
+グローバルにgulpをインストールします。
 ```
 sudo npm install -g gulp
 ```
 
 ### coffeescript
+グローバルにcoffeescriptをインストールします。
 ```
 sudo npm install -g coffee-script
 ```
