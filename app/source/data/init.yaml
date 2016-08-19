@@ -1,0 +1,40 @@
+metas:
+  global:
+    siteName: 'gulp ect sample'
+    description: 'gulp-ectのサンプルページ'
+    keywords: 'gulp,ect,html,テンプレート'
+    viewport: width=device-width
+
+pages:
+  - dir: 
+    files:
+      - name: index
+        title: トップ
+        class: home
+
+  - dir: hoge
+    files:
+      - name: index
+        title: Lorem ipsum Aute qui incididunt eiusmod culpa.
+      - name: hoge2
+        title: Lorem ipsum Duis ut deserunt.
+
+  - dir: fuga
+    files:
+      - name: index
+        title: Lorem ipsum Ea ea sed ex qui deserunt.
+      - name: fuga2
+        title: Lorem ipsum Duis adipisicing cupidatat.
+
+
+
+
+
+
+
+
+
+
+
+
+

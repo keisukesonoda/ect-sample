@@ -1,0 +1,31 @@
+<% block 'id' : %>product<% end %>
+<% extend 'layout/layout-base.ect' %>
+<% production = @data.pages.production %>
+
+<section>
+	<h2>productions</h2>
+
+	<% if production.length > 0 : %>
+	<ul>
+		<% for product in production : %>
+
+		<%
+		name = if product.title then product.title else product.name
+		title = @func.str2Upper(product.maker) + ' ' + @func.str2Upper(name)
+		%>
+
+		<li>
+			<a href="detail/<%= product.name %>/">
+				<div><img src="../img/<%= product.maker %>_<%= product.name %>.jpg" alt=""></div>
+				<h3><%= title %></h3>
+			</a>
+		</li>
+
+		<% end #for product
+		%>
+
+	</ul>
+	<% end #if production.length > 0
+	%>
+
+</section>

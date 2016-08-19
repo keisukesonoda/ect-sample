@@ -1,0 +1,25 @@
+<header>
+	<div class="container">
+		<h1>header</h1>
+		Lorem ipsum Ullamco in est aliqua pariatur sed nostrud dolor incididunt dolore laboris irure Ut labore dolor mollit.
+
+		<% if Object.keys(@data.pages.data).length > 0 : %>
+
+			<nav>
+				<h2>gnav</h2>
+				<ul>
+					<% for key, val of @data.pages.data : %>
+					<% if key isnt 'global' : %>
+					<% dir = if key isnt 'top' then key + '/' else '' %>
+
+						<li><a href="/<%= dir %>"><%= val.title %></a></li>
+
+					<% end %>
+					<% end %>
+				</ul>
+			</nav>
+
+		<% end %>
+
+	</div>
+</header>
