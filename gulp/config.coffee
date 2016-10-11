@@ -24,7 +24,6 @@ CONFIG.PATH =
 
 ### data読み込み ###
 CONFIG.DATA =
-	'init': YAML.safeLoad fs.readFileSync "#{CONFIG.PATH.src.root}/data/init.yaml", 'utf8'
 	'pages': YAML.safeLoad fs.readFileSync "#{CONFIG.PATH.src.root}/data/pages.yaml", 'utf8'
 
 ### パラメータ設定 ###
