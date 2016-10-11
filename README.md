@@ -2,7 +2,7 @@
 テンプレートエンジンectのサンプルです。最小限のパッケージになっています。
 
 ## 環境構築
-本パッケージを動かすために必要（便利）なツールをインストールします。
+本パッケージを動かすために必要なツールをインストールします。
 
 
 ### node.js
@@ -51,8 +51,7 @@ ect-sample
   ├── app
   │   └── source
   │       ├── data
-  │       │   ├── pages.yaml
-  │       │   └── init.yaml
+  │       │   └── pages.yaml
   │       └── templates
   │           ├── content
   │           │   ├── about
@@ -76,4 +75,28 @@ ect-sample
           ├── server.cofee
           └── watch.coffee
 ~~~~
+
+## 各ファイルの役割
+ectは、大きく分けて3つの役割を持つテンプレートで構成されています。
+
+### layout
+
+
+### content
+
+
+### partial
+
+
+
+## 各便利な機能
+
+
+
+
+
+
+
+
+
 
