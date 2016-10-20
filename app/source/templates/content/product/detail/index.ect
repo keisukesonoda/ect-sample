@@ -1,18 +1,29 @@
 <% block 'id' : %>production<% end %>
+<% block 'name': %><%- @name %><% end %>
 <% extend 'layout/layout-base.ect' %>
 
 <section>
 
-	<% title = if @title then @title else @name %>
+  <% title = if @title then @title else @name %>
 
-	<div class="thumb-box">
-		<div class="image"><img src="../../../img/<%= @maker %>_<%= @name %>.jpg" alt=""></div>
-		<div class="texts">
-			<h2><%= @func.str2Upper(title) %></h2>
-			<p><%- @func.n2br(@description); %></p>
-			<!-- <p><%- @func.replace_half_size(@description) %></p> -->
-		</div>
-	</div>
+  <%
+  switch @name
+    when 'cb400four'
+      type = 'HONDA'
+    when 'sr400'
+      type = 'YAMAHA'
+    else
+      type = 'kawasaki'
+  %>
+
+  <div class="thumb-box">
+    <div class="image"><img src="../../../img/<%= @maker %>_<%= @name %>.jpg" alt=""></div>
+    <div class="texts">
+      <h2><%- type %> <%= @func.str2Upper(title) %></h2>
+      <p><%- @func.n2br(@description); %></p>
+      <!-- <p><%- @func.replace_half_size(@description) %></p> -->
+    </div>
+  </div>
 
 </section>
 

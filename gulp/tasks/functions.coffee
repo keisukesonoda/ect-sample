@@ -1,13 +1,13 @@
-CONF = require '../config'
+CONF      = require '../config'
 FUNCTIONS = {}
 
-FUNCTIONS.getMetaInfo = (id) ->
+FUNCTIONS.getMetaInfo = (id, name = '') ->
 	pages  = CONF.DATA.pages.data
 	global = CONF.DATA.pages.data.global
 	result = {}
 
 	if id is 'production'
-		result.title = 'hoge'
+		result.title = name.toUpperCase() + ' | ' + global.sitename
 	else if id is 'top'
 		result.title = global.sitename
 	else

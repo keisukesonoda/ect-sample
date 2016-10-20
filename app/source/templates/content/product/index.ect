@@ -3,29 +3,29 @@
 <% production = @data.pages.production %>
 
 <section>
-	<h2>productions</h2>
+  <h2>productions</h2>
 
-	<% if production.length > 0 : %>
-	<ul>
-		<% for product in production : %>
+  <% if production.length > 0 : %>
+  <ul>
+    <% for product in production : %>
 
-		<%
-		name = if product.title then product.title else product.name
-		title = @func.str2Upper(product.maker) + ' ' + @func.str2Upper(name)
-		%>
+    <%
+    name = if product.title then product.title else product.name
+    title = @func.str2Upper(product.maker) + ' ' + @func.str2Upper(name)
+    %>
 
-		<li>
-			<a href="detail/<%= product.name %>/">
-				<div><img src="../img/<%= product.maker %>_<%= product.name %>.jpg" alt=""></div>
-				<h3><%= title %></h3>
-			</a>
-		</li>
+    <li>
+      <a href="detail/<%= product.name %>/">
+        <div><img src="../img/<%= product.maker %>_<%= product.name %>.jpg" alt=""></div>
+        <h3><%= title %></h3>
+      </a>
+    </li>
 
-		<% end #for product
-		%>
+    <% end #for product
+    %>
 
-	</ul>
-	<% end #if production.length > 0
-	%>
+  </ul>
+  <% end #if production.length > 0
+  %>
 
 </section>
