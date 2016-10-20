@@ -1,17 +1,18 @@
 <%
 id    = content 'id'
+name  = content 'name'
 pages = @data.pages.data
 %>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<% metas = @func.getMetaInfo(id) %>
-	<title><%= metas.title %></title>
-	<meta name="description" content="<%= metas.description %>">
-	<meta name="keywords" content="<%= metas.keywords %>">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-	<link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <% metas = @func.getMetaInfo(id, name) %>
+  <title><%= metas.title %></title>
+  <meta name="description" content="<%= metas.description %>">
+  <meta name="keywords" content="<%= metas.keywords %>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="<%= id %>">
 <% include 'partials/header.ect' %>
