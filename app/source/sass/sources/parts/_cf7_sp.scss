@@ -1,0 +1,154 @@
+/* --------------------
+  contactform7
+-------------------- */
+
+/* common form style
+-------------------- */
+input,
+textarea {
+  font-size: 16px !important;
+  border: 1px solid #d2d2d2;
+  padding: .3em .5em;
+  width: 100%;
+  &.s {width: 30%;}
+  &.m {width: 50%;}
+  &.l {width: 70%;}
+}
+textarea {
+  max-width: 100%;
+}
+select {
+  font-size: 16px !important;
+  margin-right: .3em !important;
+  border: 1px solid #d2d2d2;
+  max-width: 100%;
+}
+
+/* common input file
+-------------------- */
+input[type=file] {
+  @extend .fn;
+}
+
+
+/* common submit style
+-------------------- */
+input[type=submit] {
+  background-color: transparent;
+  border: none;
+}
+
+/* common file style
+-------------------- */
+input[type=file] {
+  padding: 5px 0;
+  border: none;
+}
+
+
+/* contactform7
+-------------------- */
+div.wpcf7 {
+  p {margin: 0;}
+  .wpcf7-form-control {
+    &.wpcf7-radio,
+    &.wpcf7-checkbox {
+      @extend .clearfix;
+      display: inline-block;
+      font-size: 0;
+      overflow: visible !important;
+      .wpcf7-list-item {
+        @extend .fn;
+        display: inline-block;
+        margin-left: 15px;
+        &:first-child {margin-left: 0;}
+        input {
+          display: inline;
+          margin: .5rem auto;
+          width: auto;
+        }
+      }
+    }
+  }
+  input,
+  textarea,
+  select {
+    margin: .2em 0;
+  }
+  .confirm, .back, .submit {
+    @extend .fsp1;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: url(images/_sp/arr_white.png) no-repeat 95% center black;
+    background-size: 2.5%;
+  }
+
+
+
+  // input[type="submit"] {
+  //   @extend .fsp1;
+  //   font-weight: bold;
+  //   display: block;
+  //   width: 65%;
+  //   margin: 0 auto;
+  //   padding: .5em 0;
+  //   border-radius: 0;
+  //   letter-spacing: 2px;
+  //   color: white;
+  //   background: url(images/arr_right.png) no-repeat 97% center $color-e;
+  //   background-size: 3%;
+  // }
+}
+
+div.wpcf7 img.ajax-loader {
+  display: block;
+  margin-left: auto !important;
+  margin: 10px auto;
+  position: absolute;
+  @extend .pos-horizontal-center;
+}
+
+img.ajax-loader {
+  bottom: -50%;
+}
+
+.wpcf7c-force-hide + img.ajax-loader {
+  bottom: -100%;
+}
+
+
+
+
+// エラーメッセージ
+span.wpcf7-not-valid-tip {
+  // margin-top: .3em;
+}
+
+// レスポンス全般
+.wpcf7-form .wpcf7-response-output {
+  text-align: center;
+  border: none;
+  margin: 0 auto;
+  max-width: 610px;
+  padding: 1em;
+}
+// エラー
+.wpcf7-form div.wpcf7-validation-errors {
+  font-weight: bold;
+  color: #d1444d;
+  background-color: #ffd1d1;
+}
+// 完了
+.wpcf7-form div.wpcf7-mail-sent-ok {
+  font-weight: bold;
+  color: #2b6b0f;
+  background-color: #c7efb5;
+}
+
+.wpcf7-form {
+  > * {
+    margin-top: 1em;
+  }
+}

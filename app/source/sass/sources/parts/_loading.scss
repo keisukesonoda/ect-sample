@@ -1,0 +1,14 @@
+.loader-simple {
+  height: 3em;
+  width: 3em;
+  animation: rotation 1s infinite linear;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}

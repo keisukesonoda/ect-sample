@@ -1,0 +1,87 @@
+// ------------------------
+// mixins
+// ------------------------
+@mixin whi($width, $height, $imageFile) {
+	width: $width;
+	height: $height;
+	background-image: url(images/#{$imageFile});
+}
+
+@mixin wh($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin spi($pt, $imageFile) {
+	padding-top: $pt;
+	background-image: url(images/#{$imageFile});
+}
+
+@mixin sp($pt) {
+	padding-top: $pt;
+}
+
+@mixin ptr($top, $right){
+	top: $top;
+	right: $right;
+}
+
+@mixin indents($em) {
+	text-indent: -$em;
+	padding-left: $em;
+}
+
+@mixin placeholder($fontSize, $color) {
+	input[type="button"],input[type="submit"] {
+		-webkit-appearance: none;
+	}
+	textarea::-webkit-input-placeholder,
+	input::-webkit-input-placeholder {
+		font-size: $fontSize;
+		color: $color;
+		// line-height: 2em;
+	}
+	textarea::-moz-placeholder,
+	input::-moz-placeholder {
+		font-size: $fontSize;
+		color: $color;
+		// line-height: 1em;
+	}
+	textarea:-ms-input-placeholder,
+	input:-ms-input-placeholder {
+		font-size: $fontSize;
+		color: $color;
+		// line-height: 2em;
+	}
+
+	// focusあたった時
+	textarea:focus,
+	input:focus {
+		&:-moz-placeholder {color: transparent;}
+		&::-moz-placeholder {color: transparent;}
+		&:-ms-input-placeholder {color: transparent;}
+		&::-webkit-input-placeholder {color: transparent;}
+	}
+}
+
+
+@mixin adjustTop($distance) {
+	position: relative;
+	top: $distance;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

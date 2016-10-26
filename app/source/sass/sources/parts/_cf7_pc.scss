@@ -1,0 +1,121 @@
+/* --------------------
+  contactform7
+-------------------- */
+
+/* common form style
+-------------------- */
+input,
+textarea {
+  // $pv: 5px; $ph: 10px;
+  $pv: .8%; $ph: 1%;
+  border: 1px solid #cccccc;
+  padding: $pv $ph;
+  width: 100% - $ph *2;
+  &.s {width: 30%;}
+  &.m {width: 50%;}
+  &.l {width: 70%;}
+}
+textarea {
+  max-width: 100%;
+}
+select {
+  border: 1px solid #cccccc;
+  max-width: 450px;
+}
+
+/* common submit style
+-------------------- */
+input[type=submit] {
+  background-color: transparent;
+  border: none;
+}
+
+/* common file style
+-------------------- */
+input[type=file] {
+  padding: 5px 0;
+  border: none;
+}
+
+div.wpcf7 {
+  p {margin: 0;}
+  .wpcf7-form-control {
+    &.wpcf7-radio,
+    &.wpcf7-checkbox {
+      @extend .clearfix;
+      display: inline-block;
+      font-size: 0;
+      overflow: visible !important;
+      * {@extend .fn;}
+      .wpcf7-list-item {
+        display: inline-block;
+        margin-left: 15px;
+        &:first-child {margin-left: 0;}
+        input {
+          display: inline;
+          margin: .5rem auto;
+          width: auto;
+        }
+      }
+    }
+  }
+  input,
+  textarea,
+  select {
+    margin: .2em 0;
+  }
+  .confirm, .back, .submit {
+    @include wh(340px, 45px);
+    @extend .fsp3;
+    @extend .opac;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    // background: url(images/_sp/arr_white.png) no-repeat 310px center black;
+    background-size: 10px;
+  }
+}
+
+div.wpcf7 img.ajax-loader {
+  display: block;
+  margin-left: auto !important;
+  margin: 10px auto;
+  margin-bottom: -35px;
+  @extend .pos-horizontal-center;
+}
+
+// エラーメッセージ
+span.wpcf7-not-valid-tip {
+  margin-top: .3em;
+}
+
+// レスポンス全般
+.wpcf7-form .wpcf7-response-output {
+  text-align: center;
+  border: none;
+  margin: 0 auto;
+  max-width: 610px;
+  // margin: 30px 0em -15px;
+}
+// エラー
+.wpcf7-form div.wpcf7-validation-errors {
+  font-weight: bold;
+  color: #d1444d;
+  background-color: #ffd1d1;
+  padding: 1em 0;
+}
+// 完了
+.wpcf7-form div.wpcf7-mail-sent-ok {
+  font-weight: bold;
+  color: #2b6b0f;
+  background-color: #c7efb5;
+  padding: 1em 0;
+}
+
+.wpcf7-form {
+  > * {
+    margin-top: 20px !important;
+  }
+}

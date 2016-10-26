@@ -16,3 +16,11 @@ gulp.task 'watch', ->
 	gulp.watch [
 		"#{CONF.PATH.dest.root}/css/*.css"
 	], ['reload']
+
+	gulp.watch [
+		"#{CONF.PATH.src.coffee}/*.coffee"
+	], ['coffee']
+
+	gulp.watch [
+		"#{CONF.PATH.src.sass}/**/*.scss"
+	], ['sass']

@@ -1,0 +1,62 @@
+//-------------------------------------
+//	general Settings
+//-------------------------------------
+
+// Colors
+$color-a: #000000; // text base
+$color-b: #e6e6e6; // bdr gray
+$color-c: #e5e5e5; // bg footer
+$color-d: #333333; // text gray
+$color-e: #cccccc; // bdr gray2
+$color-f: #f2f2f2; // bg archive-list
+$color-g: #000000; // 
+$color-h: #000000; // 
+$color-i: #000000; // 
+$color-j: #000000; // 
+$color-k: #000000; // 
+$color-l: #000000; // 
+
+
+// Heights
+$height-tap-1: 26px;
+$height-tap-2: 32px;
+$height-tap-3: 42px;
+
+
+// Border Radius
+$radius-base: 5px;
+$radius-2: $radius-base * 2;
+$radius-3: $radius-base * 4;
+
+
+
+/*
+import
+google font
+*/
+// @import url(https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy);
+
+// $SortsMillGoudy: 'Sorts Mill Goudy', serif;
+
+
+// @import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+// $Merriweather: 'Merriweather', serif;
+
+
+// font faces
+$notosans: 'Noto Sans', "メイリオ", Meiryo, 'Jun34Pro', "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic Pro", Verdana, Arial, sans-serif;
+
+$meiryoFont: "メイリオ", Meiryo, 'Jun34Pro', "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic Pro", Verdana, Arial, sans-serif;
+
+$gothicFont: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", "Meiryo", sans-serif;
+
+$yuGothic: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+$yuMincho: "游明朝", "YuMincho", 'ヒラギノ明朝 Pro W3', "Hiragino Mincho ProN", "Hiragino Mincho Pro", 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+
+$kozGothic: "KozGoPro-Regular", "小塚ゴシック Pro R", "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+
+$minchoFont: 'ヒラギノ明朝 Pro W3', "Hiragino Mincho ProN", "Hiragino Mincho Pro", "游明朝", "YuMincho", 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+
+$helvetica: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;

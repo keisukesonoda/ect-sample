@@ -12,7 +12,7 @@ pages = @data.pages.data
   <meta name="description" content="<%= metas.description %>">
   <meta name="keywords" content="<%= metas.keywords %>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body class="<%= id %>">
 <% include 'partials/header.ect' %>
@@ -25,5 +25,7 @@ pages = @data.pages.data
 
 <% include 'partials/footer.ect' %>
 
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="/js/script.min.js"></script>
 </body>
 </html>

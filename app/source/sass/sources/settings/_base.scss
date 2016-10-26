@@ -1,0 +1,53 @@
+/*-------------------------------------
+ Base Settings
+-------------------------------------*/
+
+body {
+	font-size: $font-size-base;
+	font-family: $meiryoFont;
+	color: $color-a;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing:antialiased;
+	line-height: 1.3;
+}
+
+
+
+/* --------------------
+	tags
+-------------------- */
+a {
+	color: inherit;
+	text-decoration: none;
+}
+b {
+	font-weight: bold;
+}
+i {
+	display: inline-block;
+}
+em {
+	font-style: normal;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+iframe, object, video, embed {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+table {
+	width: 100%;
+}
+* {
+	outline: none;
+}
+input, textarea {
+	border: none;
+}
+button.ti {
+	text-indent: 160%;
+}

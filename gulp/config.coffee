@@ -17,10 +17,16 @@ CONFIG.DIR =
 ### パス設定 ###
 CONFIG.PATH =
 	'src':
-		'root': "#{CONFIG.DIR.app}/#{CONFIG.DIR.src}"
-		'temp': "#{CONFIG.DIR.app}/#{CONFIG.DIR.src}/#{CONFIG.DIR.temp}"
+		'root':   "#{CONFIG.DIR.app}/#{CONFIG.DIR.src}"
+		'temp':   "#{CONFIG.DIR.app}/#{CONFIG.DIR.src}/#{CONFIG.DIR.temp}"
+		'coffee': "#{CONFIG.DIR.app}/#{CONFIG.DIR.src}/#{CONFIG.DIR.coffee}"
+		'js':     "#{CONFIG.DIR.app}/#{CONFIG.DIR.src}/#{CONFIG.DIR.js}"
+		'sass':   "#{CONFIG.DIR.app}/#{CONFIG.DIR.src}/#{CONFIG.DIR.sass}"
+		'css':    "#{CONFIG.DIR.app}/#{CONFIG.DIR.src}/#{CONFIG.DIR.css}"
 	'dest':
 		'root': "#{CONFIG.DIR.app}/#{CONFIG.DIR.dest}"
+		'js':   "#{CONFIG.DIR.app}/#{CONFIG.DIR.dest}/#{CONFIG.DIR.js}"
+		'css':  "#{CONFIG.DIR.app}/#{CONFIG.DIR.dest}/#{CONFIG.DIR.css}"
 
 ### data読み込み ###
 CONFIG.DATA =
